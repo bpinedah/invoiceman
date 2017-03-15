@@ -60,7 +60,7 @@ var options = {
 
 invoiceman.generate(options, function (err, data) {
   if (err) throw err;
-  // Do stuffs with data.
+  // Do stuffs with data and your new PDF file is on your output path
 });
 ```
 ### Respuesta OK
