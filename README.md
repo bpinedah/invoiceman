@@ -66,15 +66,15 @@ nearbypoint.nearby(request, function (err, data) {
 ### Respuesta OK
 ```json
 { 
-  success: true, 
-  message: 'PDF Created on /output.pdf' 
+  "success": true, 
+  "message": "PDF Created on /output.pdf" 
 }
 ```
 ### Respuesta error
 ```json
 {
-  success: false,
-  message: "Error interno"
+  "success": false,
+  "message": "Error interno"
 }
 ```
 ### Test
