@@ -58,7 +58,7 @@ var options = {
   }
 };
 
-nearbypoint.nearby(request, function (err, data) {
+invoiceman.generate(options, function (err, data) {
   if (err) throw err;
   // Do stuffs with data.
 });
