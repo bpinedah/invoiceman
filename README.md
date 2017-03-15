@@ -1,11 +1,11 @@
 # invoiceman
 Obtiene el formato generico de una factura a partir de un objeto JSON, con las normas fiscales aplicadas en México.
 
-### Install
+### Instalación
 ```
 npm install invoiceman
 ```
-### Usage
+### Uso
 ```javascript
 var invoiceman = require('invoiceman');
 
@@ -14,7 +14,7 @@ invoiceman.generate(options, function (err, data) {
   // Do stuffs with data.
 });
 ```
-### Example
+### Ejemplo
 ```javascript
 var invoiceman = require('invoiceman');
 
@@ -63,14 +63,14 @@ nearbypoint.nearby(request, function (err, data) {
   // Do stuffs with data.
 });
 ```
-### Response OK
+### Respuesta OK
 ```json
 { 
   success: true, 
   message: 'PDF Created on /output.pdf' 
 }
 ```
-### Response error
+### Respuesta error
 ```json
 {
   success: false,
