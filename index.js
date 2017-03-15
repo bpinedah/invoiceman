@@ -148,7 +148,11 @@ module.exports = {
 
       doc.end()
     } catch (e) {
-      callback(e)
+      var result = {
+        success: false,
+        message: e.message
+      }
+      callback(result)
     }
   }
 }

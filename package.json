@@ -1,6 +1,6 @@
 {
   "name": "invoiceman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate PFD invoice from XML and JSON",
   "main": "index.js",
   "scripts": {
