@@ -1,0 +1,34 @@
+{
+  "name": "invoiceman",
+  "version": "1.0.0",
+  "description": "Generate PFD invoice from XML and JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpinedah/invoiceman.git"
+  },
+  "keywords": [
+    "pdf",
+    "generator",
+    "invoice",
+    "mexico",
+    "sat"
+  ],
+  "author": "Bruno Pineda <bpinedah@gmail.com> (https://github.com/bpinedah)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpinedah/invoiceman/issues"
+  },
+  "homepage": "https://github.com/bpinedah/invoiceman#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "pdfkit": "^0.8.0"
+  }
+}
