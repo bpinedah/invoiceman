@@ -21,7 +21,8 @@ var invoiceman = require('invoiceman');
 var options = {
   pdf: "./output.pdf",
   logo: "./logoPrixz.png",
-  xml: "./test.xml"
+  esArchivo: true, // false to send content XML format
+  xml: "./test.xml" // Or XML content and esArchivo to false
 };
 
 invoiceman.generate(options, function (err, data) {
