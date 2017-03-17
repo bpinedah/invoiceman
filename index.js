@@ -14,10 +14,10 @@ module.exports = {
             callback(errFile);
             return;
           }
-          createPDF(data);
+          createPDF(data, callback);
         })
       } else {
-        createPDF(options.xml);
+        createPDF(options.xml, callback);
       }
     } catch (e) {
       var result = {
@@ -29,7 +29,7 @@ module.exports = {
   }
 }
 
-function createPDF(data) {
+function createPDF(data, callback) {
   var optionsXML = {
     trim: true,
     sanitize: true
