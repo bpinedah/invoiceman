@@ -42,8 +42,8 @@ function createPDF(data, options, callback) {
   var direccion       = receptor["cfdi:Domicilio"];
   var conceptos       = datos["cfdi:Conceptos"];
   var impuestos       = datos["cfdi:Impuestos"];
-  var retenciones     = impuestos["cfdi:Retenciones"];
-  var retencion       = retenciones["cfdi:Retencion"];
+  var retenciones     = impuestos["cfdi:Traslados"];
+  var retencion       = retenciones["cfdi:Traslado"];
   var complemento     = datos["cfdi:Complemento"];
   var timbreFiscal    = complemento["tfd:TimbreFiscalDigital"];
 
@@ -63,7 +63,7 @@ function createPDF(data, options, callback) {
 
   doc.lineJoin('miter')
      .roundedRect(20, 20, 570, 500, 3)
-     .stroke()
+     .stroke("#E3740E")
 
   doc.image(options.logo, 25, 25, {width: 150})
   doc.fontSize(12)
@@ -74,7 +74,7 @@ function createPDF(data, options, callback) {
 
   doc.lineJoin('miter')
      .roundedRect(450, 20, 140, 25, 3)
-     .stroke()
+     .stroke("#E3740E")
 
   doc.fontSize(14)
      .fillColor('red')
@@ -82,7 +82,7 @@ function createPDF(data, options, callback) {
 
   doc.lineJoin('miter')
      .roundedRect(450, 45, 140, 25, 3)
-     .stroke()
+     .stroke("#E3740E")
 
   doc.fontSize(6)
      .fillColor('black')
@@ -148,13 +148,13 @@ function createPDF(data, options, callback) {
 
   doc.lineJoin('miter')
      .roundedRect(20, 520, 100, 100, 3)
-     .stroke("black")
+     .stroke("#E3740E")
   doc.lineJoin('miter')
      .roundedRect(120, 520, 300, 100, 3)
-     .stroke("black")
+     .stroke("#E3740E")
   doc.lineJoin('miter')
      .roundedRect(420, 520, 170, 100, 3)
-     .stroke("black")
+     .stroke("#E3740E")
 
   doc.fontSize(10)
      .fillColor('black')
@@ -175,7 +175,7 @@ function createPDF(data, options, callback) {
   doc.lineCap('butt')
      .moveTo(425, 600)
      .lineTo(582, 600)
-     .stroke()
+     .stroke("#E3740E")
 
   doc.fontSize(10)
      .fillColor('black')
@@ -184,7 +184,7 @@ function createPDF(data, options, callback) {
 
   doc.lineJoin('miter')
      .roundedRect(20, 620, 570, 86, 3)
-     .stroke("black")
+     .stroke("#E3740E")
 
   doc.fontSize(8)
      .fillColor('black')
