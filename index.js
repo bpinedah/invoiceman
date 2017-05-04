@@ -121,8 +121,8 @@ function createPDF(data, options, callback) {
      .text("TOTAL", 505, 172, {width: 60, align: "center"})
 
   var concept_y = 190
-  if (Array.isArray(conceptos)) {
-    _.forEach(conceptos, function (value) {
+  if (Array.isArray(conceptos['cfdi:Concepto'])) {
+    _.forEach(conceptos['cfdi:Concepto'], function (value) {
       doc.fontSize(8)
          .fillColor('black')
          .text(value.noIdentificacion, 25, concept_y, {width: 50, align: "left"})
